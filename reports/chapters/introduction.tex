@@ -4,19 +4,12 @@
 
 \textbf 
 
-After being first presented by a group of researchers at Google Brain in 2017, transformers are 
-quickly displacing RNN models, such as extended short-term memory, as the preferred model for 
-problems with natural language processing (LSTM). White and Safi (2016) demonstrated that when 
-the ANN model's linking function was nonlinear, it outperformed the ARIMA model. But the ARIMA 
-model did better than the ANN model when its linking function was linear. This is not 
-unexpected given that the ARIMA model was created especially for this circumstance 
-\cite{safi2021hybrid}. The hybrid model that is employed is a blend of the autoregressive 
-integrated moving average (ARIMA) model, the nonlinear artificial neural network (ANN), and the 
-Error, Trend, and Seasonality (ETS) models. It is a linear stochastic model. The hybrid model 
-outperforms the linear and nonlinear models, according to data from earlier investigations. For 
-instance, the hybrid model was shown to have the highest accuracy when used to forecast drought 
-in India using a standardized precipitation index series, in comparison to separate stochastic 
-and ANN models.
+Instability is defined as the real proportion of profit dispersion for a specific security or market. Contributing to and benefitting from the market has never been easy due to its evident weakness and severe unpredictability, in which shares and values might increase or fall dramatically. Typically, the more risky the security, the greater the degree of uncertainty. The fluctuation of basic stocks' true costs is known as documented instability or "known unpredictability." They have shown to be the most difficult yet rewarding and beneficial for business. There are several evaluations of market behavior.
+
+Time series forecasting is a significant area of forecasting in which previous observations of the same variable are gathered and evaluated to create a model that describes the underlying relationship. The model is then used to extrapolate the time series forward. The autoregressive integrated moving average (ARIMA) model is a popular and well-known time series model. The ARIMA model's popularity stems from its statistical features as well as the well-known Box-Jenkins approach \citep{DEGROOT1991177} used in model development. However, the assumption of linear data renders them unsuitable for nonlinear time series modeling.
+
+Unlike sequence-aligned models \citep{wu2020deep}, the transformer analyzes a full series of data and uses self-attention mechanisms to learn information from the sequence, allowing us to model variable relationships without regard for their distance in the input sequences. In particular, because the attention mechanism may not only gather global information but also focus on relevant material, it has the potential to ease the curse of dimensionality significantly.
+
 
 We use the Y-finance dataset to forecast a single ticker, taking into account several factors 
 such as volume, high, close, and open. Utilizing nine tickers, we are able to achieve 
@@ -34,14 +27,14 @@ analysis using various time instances is confirmed.
 \textbf
 Stockbrokers, traders, and investors that purchase, sell, or share transactions 
 collectively make up the stock market. Because so many businesses post their stock lists 
-online, investors find their stocks appealing \cite{bhattacharjee2019stock}. The size of the 
+online, investors find their stocks appealing \citep{bhattacharjee2019stock}. The size of the 
 markets and the speed at which deals are completed now make it impractical for investors to use 
 their own experience, which they once used to discern market trends. A nation's economic status 
 affects a number of industries, including investment banking, metals, agriculture, and finance, 
 either directly or indirectly. The fundamental law of supply and demand dictates that the 
 growth of these industries depends on their volatility. Due to the fact that investors have 
 been attempting various methods since the 17th century in order to increase the returns on their 
-investments by learning about various firms \cite{mehta2021stock}. There is a noticeable 
+investments by learning about various firms \citep{mehta2021stock}. There is a noticeable 
 increase in demand for stock market services. Accurately predicting future financial outcomes is the 
 main goal of stock price prediction. Machine Learning algorithms have shown promise in a number 
 of sectors in recent years, and as a result, many traders are using these strategies in their 
@@ -63,7 +56,7 @@ artificial neural networks (ANNs) have been utilized for prediction.
 \section{Problem statement}
 \label{sec:intro_prob_art}
 Given the available computing power and training constraints, is it possible to build and train 
-both transformer neural networks and an ARIMA-ANN hybrid model using historical stock price 
+both a transformer neural networks and an ARIMA-ANN hybrid model using historical stock price 
 data? What distinguishes Transformer Neural Networks' stock price prediction skills from those 
 of the ARIMA-ANN hybrid model, and what are their distinctive characteristics and performance 
 metrics? What insights can be acquired on the capacity of these models to adjust to shifting 
