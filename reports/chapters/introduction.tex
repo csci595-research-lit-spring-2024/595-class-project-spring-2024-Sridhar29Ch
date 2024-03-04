@@ -91,6 +91,16 @@ As financial data and analysis continue to progress, we are using Yahoo finance 
 Taking into consideration the different open, close, volume, and high elements, we produce a forecast for a particular ticker using the Y-finance dataset. In order to implement the prediction features, we use nine tickers, with the tenth ticker being predicted based on the values of the nine tickers. To achieve these effective adjustments, we compute a fix whose prediction weights on the model yield the specific shift in testing and prediction outcomes. Finally, an overall analysis of comparisons across different time periods
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dataset} %  use this section 
+\label{sec:intro_sum_results} % label of summary of results
+We get stock prices from Yahoo! Finance using Python modules and a custom method. We collect the open, close, adj close, high, low, prices, and volume of ten different firms once every one day, one hour, and five minutes. We have three years of data at one-day intervals, one year at one-hour intervals, and the last 60 days at five-minute intervals. The prices are standardized by a min-max scaler. 95\% of the stock data is used to train the models, with the remaining 5\% for validation and testing. We expect the algorithms to finally build a market pattern based on the prices of ten corporations during the last three years. The program will be trained on data from nine different organizations before being used to forecast data from a tenth.
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary of contributions and achievements} %  use this section 
 \label{sec:intro_sum_results} % label of summary of results
 
