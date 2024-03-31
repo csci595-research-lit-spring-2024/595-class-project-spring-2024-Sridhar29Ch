@@ -24,43 +24,52 @@ Because of the market's high level of intricacy and volatility, forecasting its 
 
 Volatility clustering is an important factor that influences how stock markets work. However, developing credible models for accurately anticipating future stock price volatility is a difficult research challenge to address. We provide multiple volatility models based on the generalized autoregressive conditional heteroscedasticity (GARCH) framework for describing the volatility of ten equities listed on India's National Stock Exchange (NSE). The stocks were offered by the Indian economy's banking and car industries, and they have a substantial influence on the sectoral indexes maintained by their respective industries on NSE. Historical stock price data from January 1, 2010, to April 30, 2021 were extracted from the Yahoo Finance website using the Python computer language's Data Reader API. This operation began on January 1, 2010. The training data is used to create and fine-tune the GARCH modules, while the out-of-sample data is used to test the models and evaluate their performance. According to the results, asymmetric GARCH models forecast future stock price volatility more precisely \citep{sen2021volatility}.
 
+Bitcoin is a kind of digital money that is encrypted and hence extremely difficult to reproduce or counterfeit. Blockchain technology serves as the primary foundation for classifying several cryptocurrency networks. The current socioeconomic situation allows consumers to save less cash and remain disconnected from market movements. The project's purpose is to build an effective machine learning prediction model. We begin by downloading data from the Yahoo Finance website using built-in Python modules. Our objective was to apply machine learning to forecast the values of several cryptocurrencies, thus we used the Autoregressive Integrated Moving Average Model (ARIMA). We used lagged data from the previous day, seven days, and thirty days to do feature engineering. We used Plot graph to predict the model's outcome and plot it in a responsive chart \citep{aanandhi2021cryptocurrency}.
+
+In recent years, a rising number of research projects have been launched to investigate the predictability of financial market patterns using a range of machine learning techniques. In this article, we will investigate the possibility of using deep neural networks to assess and anticipate futures market trends. Our technique forecasts futures market movement using enhanced market transaction data and the ARIMA-ANN model. First, we will obtain the ARIMA residual and utilize it to train the ANN model. We train and test our model on a regular basis to check and verify the accuracy of its forecasts. Then, to put our plan to the test, we build and launch a comprehensive trading platform. Our model generates favorable results in both historical back testing and real-time paper trading on this platform. Genuine paper trading yields a total return of 58.69\% over a 12-month period while accounting for slippage and expenses, indicating the efficiency of the strategy outlined \citep{sun2019predicting}.
+
+The usage of social networking sites has become so widespread that they have become an integral part of our everyday life. Users can use this technology to post and view material to their accounts, such as text messages, photos, and videos. Users can engage with one another within their current locations in the same manner that social networking websites do, and publish newly updated information that will be shared with any other followers or guest users. As part of this research effort, we propose a unique way for assessing existing resources in order to predict both sentiment analysis and user expectations. These findings apply to Applied Economics, Expert Systems, Human Brain Analysis, Voting, Stock Markets, Live Updates on Any Field, and other areas \citep{ramesh2020artificial}.
+
+Machine learning algorithms enable computers to discover patterns in data sets and generate predictions using statistical approaches, which is only one component of the process. During the machine learning process, a grouping model is created from the data set to predict the kind of test data based on the training data. Every sector is currently looking into machine learning in order to produce solutions that are dependable, precise, and optimized. This is evident in the financial industry, e-commerce, stock markets, healthcare, the automation of daily human work, and wildlife protection. Machine learning techniques include linear regression, logistic regression, decision trees, random forests, K-means clustering, artificial neural networks, and deep learning architectures. Because of their distinct qualities, these methods may be utilized as either classification or regression models \citep{ponnam2016comparative}.
+
+To make lucrative investments, businesspeople and the middle class need be informed of stock market forecasts. This article makes use of the company's dynamic dataset. The dataset contains the stock's value at the end of each of the last 290 working days. The dataset was acquired from Yahoo Finance (https://finance.yahoo.com), thus the information in it is reliable. To accurately anticipate the stock market, an acceptable approach for the dataset was selected. A number of technical analysis and machine learning approaches are used to forecast the company's stock and exchange rate values in the future. This article uses a variety of machine learning models, including Linear Regression, Decision Tree, Random Forest, SVR, ANN, LSTM, Lasso Regression, KNN, Bayesian Ridge, ARIMA, Gradient Boosting, and Ada Boost \citep{yasmin2022stock}.
+
+\chapter{Time Series}
+
+A time series is a set of data points that appear in a specific order over a given period of time. This is comparable to cross-sectional data, which represents a single moment in time. An investment time series collects data points at regular intervals and plots the change of those data points, such as the price of an asset, over time. Because there is no minimum or maximum amount of time that must be included, the data may be collected in such a way that the investor or analyst looking at the activity receives the information they want.
+
+\section{Understanding Time Series} %  use this section 
+\label{sec:intro_sum_results} % label of summary of results
+A time series may be used to represent any variable that varies over time. A time series is commonly used in investing to track the price of an investment over time. This can be done over a short period of time, such as a security's price at each hour throughout a business day, or over a long period of time, such as the price of a security at the end of each month during a five-year period.
+Time series analysis may be useful in determining how a certain asset, security, or economic variable evolves over time. It may also be used to compare changes in the selected data point to changes in other variables within the same time period.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=1.0]{figures/TimeSeries.png}
+    \caption{A time series graph of the population of the United States from 1900 to 2000.}
+    \label{fig:chart_a}
+\end{figure}
+
+\section{Time Series Analysis} %  use this section 
+\label{sec:intro_sum_results} % label of summary of results
+For a given stock, you may look at a whole year's worth of daily closing prices. You would generate a list of the stock's closing prices for the previous year, in reverse chronological order. This would be an annual time series of the stock's daily closing prices.
+
+whether you want to dig deeper, you might utilize technical analysis tools to evaluate time series data to see whether the stock's time series has any seasonality. This can help you determine whether the stock has peaks and troughs at regular periods throughout the year. For this region's study, the observed prices would need to be compared to a certain season. This can encompass both ordinary calendar seasons, such as summer and winter, and commercial seasons, such as the Christmas shopping season.
+
+Alternatively, a stock's share price history can be traced in connection to economic indicators such as the unemployment rate. Patterns can be identified in situations where the data points and the chosen economic variable are dependant by connecting the data points with knowledge of that variable. Because each variable in a time series is dependent on its prior condition or value, there may be a high number of autocorrelations, skewing the findings.
 
 
-% PLEAE CHANGE THE TITLE of this section
-\section{Example of in-text citation of references in \LaTeX} 
-% Note the use of \cite{} and \citep{}
-The references in a report relate your content with the relevant sources, papers, and the works of others. To include references in a report, we \textit{cite} them in the texts. In MS-Word, EndNote, or MS-Word references, or plain text as a list can be used. Similarly, in \LaTeX, you can use the ``thebibliography'' environment, which is similar to the plain text as a list arrangement like the MS word. However, In \LaTeX, the most convenient way is to use the BibTex, which takes the references in a particular format [see references.bib file of this template] and lists them in style [APA, Harvard, etc.] as we want with the help of proper packages.    
 
-These are the examples of how to \textit{cite} external sources, seminal works, and research papers. In \LaTeX, if you use ``\textbf{BibTex}'' you do not have to worry much since the proper use of a bibliographystyle package like ``agsm for the Harvard style'' and little rectification of the content in a BiBText source file [In this template, BibTex are stored in the ``references.bib'' file], we can conveniently generate  a reference style. 
+\section{Time Series Forecasting} %  use this section 
+\label{sec:intro_sum_results} % label of summary of results
+Time series forecasting uses previous values and trends to anticipate the future of activity. This generally involves trend analysis, cyclical fluctuation analysis, and seasonality issues. Any forecasting approach cannot be guaranteed to succeed.
 
-Take a note of the commands \textbackslash cite\{\} and \textbackslash citep\{\}. The command \textbackslash cite\{\} will write like ``Author et al. (2019)'' style for Harvard, APA and Chicago style. The command \textbackslash citep\{\} will write like ``(Author et al., 2019).'' Depending on how you construct a sentence, you need to use them smartly. Check the examples of \textbf{in-text citation} of sources listed here [This template recommends the \textbf{Harvard style} of referencing.]:
-\begin{itemize}
-    \item \cite{lamport1994latex} has written a comprehensive guide on writing in \LaTeX ~[Example of \textbackslash cite\{\} ].
-    \item If \LaTeX~is used efficiently and effectively, it helps in writing a very high-quality project report~\citep{lamport1994latex} ~[Example of \textbackslash citep\{\} ].   
-    \item A detailed APA, Harvard, and Chicago referencing style guide are available in~\citep{uor_refernce_style}.
-\end{itemize}
+For example, the Box-Jenkins Model is a technique for forecasting data ranges using inputs from a certain time series. Data forecasting employs three concepts: autoregression, differencing, and moving averages. These three principles are named P, D, and Q. Each principle is used in the Box-Jenkins analysis, and when combined, they produce an ARIMA (p, d, q). ARIMA, for example, can be used to forecast stock price movements or revenue growth.
 
-\noindent 
-Example of a numbered list:
-\begin{enumerate}
-    \item \cite{lamport1994latex} has written a comprehensive guide on writing in \LaTeX.
-    \item If \LaTeX is used efficiently and effectively, it helps in writing a very high-quality project report~\citep{lamport1994latex}.   
-\end{enumerate}
+Rescaled range analysis is an alternative approach for identifying and quantifying persistence, unpredictability, and mean reversion in time series data. To evaluate if a trend is stable or likely to reverse, use the rescaled range to estimate a future value or average.
 
-% PLEAE CHANGE THE TITLE of this section
-\section{Example of ``risk'' of unintentional plagiarism}
-Using other sources, ideas, and material always bring with it a risk of unintentional plagiarism. 
+\section{Cross-Sectional vs. Time Series Analysis} %  use this section 
+\label{sec:intro_sum_results} % label of summary of results
+Cross-sectional analysis is one of two primary stock comparison methodologies. Cross-sectional analysis is used to assess data obtained at a particular moment in time rather than throughout time. The initial steps in the analysis process are to define the variables an analyst wants to assess and set research objectives. The next step is to select the cross section to be examined, such as a group of peers or an industry, as well as the specific time period. The next stage is to conduct analysis based on the variables and cross section, and then make a judgment on how well a business or organization is operating. Cross-sectional analysis selects the best business for an investor based on the factors that are important to them.
 
-\noindent
-\textbf{\color{red}MUST}: do read the university guidelines on the definition of plagiarism as well as the guidelines on how to avoid plagiarism~\citep{uor_plagiarism}.
-
-
-
-
-% A possible section of you chapter
-\section{Critique of the review} % Use this section title or choose a betterone
-Describe your main findings and evaluation of the literature. ~\\
-
-% Pleae use this section
-\section{Summary} 
-Write a summary of this chapter~\\
+When employed in technical trading, time series analysis, also known as trend analysis, focuses on a single securities across time. In this case, the price is determined by its historical performance. An investor can use time series analysis to identify whether a firm is performing better or worse than it was previously depending on the parameters that are important to them. These are often classic indicators like as profits per share (EPS), debt to equity, free cash flow (FCF), and so on. When making a decision, investors commonly mix time series with cross-sectional analysis—for example, by first studying EPS over time and then comparing it to industry benchmark EPS.

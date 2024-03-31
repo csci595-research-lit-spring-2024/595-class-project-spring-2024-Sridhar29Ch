@@ -1,272 +1,77 @@
-% replace all text with your own text.
-% in this template few examples are mention
-\chapter{Methodology}
-\label{ch:method} % Label for method chapter
+\chapter{Algorithms}
 
-We mentioned in Chapter~\ref{ch:into} %[example backward reference to a chapter or section.]
-that a project report's structure could follow a particular paradigm. Hence, the organization of a report (effectively the Table of Content of a report) can vary depending on the type of project you are doing. Check which of the given examples suit your project. Alternatively, follow your supervisor's advice.
+Neural networks are a set of algorithms that identify patterns and are roughly modeled after the human brain. They use machine perception to categorize or organize raw information in order to better interpret sensory data. All real-world data, including pictures, sounds, texts, and time series, must be transformed into vectors in order to understand the numerical patterns inherent therein.
 
-\section{Examples of the sections of a methodology chapter}
-A general report structure is summarised (suggested) in Table~\ref{tab:gen_template}. Table~\ref{tab:gen_template} describes that, in general, a typical report structure has three main parts: (1) front matter, (2) main text, and (3) end matter. %[\textbf{also notice that the preceding sentence is an example of a numbered list in a text body}]. 
-The structure of the front matter and end matter will remain the same for all the undergraduate final year project report. However, the main text varies as per the project's needs.
-\begin{table}[ht!]
-    \centering
-    \caption{Undergraduate report template structure}
-    \label{tab:gen_template}
-    \begin{tabular}{llll}     
-        \toprule
-        \multirow{7}{3cm}{Frontmatter} 
-        & & Title Page & \\                  
-        & & Abstract &    \\          
-        & & Acknowledgements & \\                            
-        & & Table of Contents &    \\                                
-        & & List of Figures   &    \\                        
-        & & List of Tables    &    \\                
-        & & List of Abbreviations  &    \\                     
-        & &   &    \\                        
-        \multirow{7}{3cm}{Main text}
-        & Chapter 1 & Introduction   &    \\                         
-        & Chapter 2 & Literature Review   &    \\
-        & Chapter 3 & Methodology   &    \\
-        & Chapter 4 & Results    &    \\
-        & Chapter 5 & Discussion and Analysis  &    \\
-        & Chapter 6 & Conclusions and Future Work  &    \\        
-        & Chapter 7 & Refection  &    \\          
-        & &   &    \\                       
-        \multirow{2}{3cm}{End matter}
-        & & References  &    \\   
-        & & Appendices (Optional)  &    \\ 
-        & & Index (Optional)  &    \\ 
-        \bottomrule
-    \end{tabular}
-\end{table}
-
-\subsection{Example of a software/Web development main text structure}
-\label{subsec:se_chpters}
-Notice that the ``methodology'' Chapter of Software/Web development in Table~\ref{tab:soft_eng_temp} takes a standard software engineering paradigm (approach). Alternatively, these suggested sections can be the chapters of their own. Also, notice that ``Chapter 5'' in Table~\ref{tab:soft_eng_temp} is ``Testing and Validation'' which is different from the general report template mentioned in Table~\ref{tab:gen_template}. Check with your supervisor if in doubt.
-\begin{table}[ht!]
-    \centering
-    \caption{Example of a software engineering-type report structure}
-    \label{tab:soft_eng_temp}
-    \begin{tabular}{lll}     
-        \toprule                   
-        Chapter 1 & Introduction   &    \\        
-        Chapter 2 & Literature Review  &    \\                   
-        Chapter 3 & Methodology   &    \\
-        &               & Requirements specifications   \\
-        &               & Analysis   \\
-        &               & Design   \\
-        &               & Implementations   \\
-        Chapter 4 & Testing and Validation  &    \\
-        Chapter 5 & Results and Discussion      &    \\
+\section{Design Procedure} %  use this section 
+\label{sec:intro_sum_results} % label of summary of results
+                  
+        Step 1: First, generate the dataset using the custom function from the y-finance package. &    \\        
+        Step 2: Begin the solution feature extraction for 9 tickers with 1 ticker as the feature model.  &    \\        
+        Step 3:Indicate the total selected and merged samples based on the multi-objective function with regard to the single ticker chosen.   &    \\
+        Step 4: Normalize the entire data to improve accuracy and intuitive learning responses.  &    \\
+        Step 5:Determine the overall featured labels, then design a TNN and ARIMA-ANN model for training.      &    \\
         Chapter 6 & Conclusions and Future Work  &    \\        
-        Chapter 7 & Reflection  &    \\                          
-        \bottomrule
-    \end{tabular}
-\end{table}
+        Step 7: Visualize the data using 5 minute, 1 hour, and 1 day increments. &    \\      
+        Step 8:Show the total error change on the single ticker using the appropriate highlighted data as (open (1 ticker)-open (9 tickers)).  & \\
+Step 9:How the proposed and current algorithms affect the display of stock data dependent on the year. & \\
 
-\subsection{Example of an algorithm analysis main text structure}
-Some project might involve the implementation of a state-of-the-art algorithm and its performance analysis and comparison with other algorithms. In that case, the suggestion in Table~\ref{tab:algo_temp} may suit you the best. 
-\begin{table}[ht!]
-    \centering
-    \caption{Example of an algorithm analysis type report structure}
-    \label{tab:algo_temp}
-    \begin{tabular}{lll}     
-        \toprule                   
-        Chapter 1 & Introduction  &    \\        
-        Chapter 2 & Literature Review  &    \\                
-        Chapter 3 & Methodology   &    \\
-        &               & Algorithms descriptions  \\
-        &               & Implementations   \\
-        &               & Experiments design   \\
-        Chapter 4 & Results       &  \\
-        Chapter 5 & Discussion and Analysis  &    \\
-        Chapter 6 & Conclusion and Future Work  &    \\        
-        Chapter 7 & Reflection  &    \\          
-        \bottomrule
-    \end{tabular}
-\end{table}
+\section{Transformer Neural Networks}
+In many neural network topologies, the transformer is used to handle sequential data such as natural language text, genetic sequences, auditory signals, or time series data. Transformer neural networks are most commonly employed for natural language processing. A transformer neural network can convert an input phrase as a series of vectors into an encoding vector, which it can then decode back into a sequence of vectors. The attention mechanism is an important component of the transformer. The attention mechanism determines the significance of other tokens in an input for encoding a certain token. The attention mechanism in a machine translation model, for example, allows the transformer to convert words such as "it" into a word of the proper gender in French or Spanish by paying attention to all relevant phrases in the original text. Importantly, the transformer may use the attention mechanism to determine how to translate a word by concentrating on phrases to the left and right of the current sentence. Transformer neural networks have replaced the previously used recurrent neural network (RNN), long short-term memory (LSTM), and gated recurrent (GRU) neural network designs.
 
-\subsection{Example of an application type main text structure}
-If you are applying some algorithms/tools/technologies on some problems/datasets/etc., you may use the methodology section prescribed in Table~\ref{tab:app_temp}.  
-\begin{table}[ht!]
-    \centering
-    \caption{Example of an application type report structure}
-    \label{tab:app_temp}
-    \begin{tabular}{lll}     
-        \toprule                   
-        Chapter 1 & Introduction  &    \\        
-        Chapter 2 & Literature Review  &    \\                
-        Chapter 3 & Methodology   &    \\
-        &               & Problems (tasks) descriptions  \\
-        &               & Algorithms/tools/technologies/etc. descriptions  \\        
-        &               & Implementations   \\
-        &               & Experiments design and setup   \\
-        Chapter 4 & Results       &  \\
-        Chapter 5 & Discussion and Analysis  &    \\
-        Chapter 6 & Conclusion and Future Work  &    \\        
-        Chapter 7 & Reflection  &    \\          
-        \bottomrule
-    \end{tabular}
-\end{table}
+Importantly, the transformer may use the attention mechanism to select how to translate a word by focusing on certain phrases to the left and right of the current sentence. Transformer neural networks have taken the role of previous neural network architectures such as recurrent neural network (RNN), long short-term memory (LSTM), and gated recurrent (GRU).
 
-\subsection{Example of a science lab-type main text structure}
-If you are doing a science lab experiment type of project, you may use the  methodology section suggested in Table~\ref{tab:lab_temp}. In this kind of project, you may refer to the ``Methodology'' section as ``Materials and Methods.''
-\begin{table}[ht!]
-    \centering
-    \caption{Example of a science lab experiment-type report structure}
-    \label{tab:lab_temp}
-    \begin{tabular}{lll}     
-        \toprule                   
-        Chapter 1 & Introduction  &    \\        
-        Chapter 2 & Literature Review  &    \\                
-        Chapter 3 & Materials and Methods   &    \\
-        &               & Problems (tasks) description  \\
-        &               & Materials \\        
-        &               & Procedures  \\                
-        &               & Implementations   \\
-        &               & Experiment set-up   \\
-        Chapter 4 & Results       &  \\
-        Chapter 5 & Discussion and Analysis  &    \\
-        Chapter 6 & Conclusion and Future Work  &    \\        
-        Chapter 7 & Reflection  &    \\          
-        \bottomrule
-    \end{tabular}
-\end{table}
+\section {Transformer Neural Network Design}
 
-\section{Example of an Equation in \LaTeX}
-Eq.~\ref{eq:eq_example} [note that this is an example of an equation's in-text citation] is an example of an equation in \LaTeX. In Eq.~\eqref{eq:eq_example}, $ s $ is the mean of elements $ x_i \in \mathbf{x} $: 
-
-\begin{equation}
-\label{eq:eq_example} % label used to refer the eq in text
-s = \frac{1}{N} \sum_{i = 1}^{N} x_i. 
-\end{equation}
-
-Have you noticed that all the variables of the equation are defined using the \textbf{in-text} maths command \$.\$, and Eq.~\eqref{eq:eq_example} is treated as a part of the sentence with proper punctuation? Always treat an equation or expression as a part of the sentence. 
-
-\section{Example of a Figure in \LaTeX}
-Figure~\ref{fig:chart_a} is an example of a figure in \LaTeX. For more details, check the link:
-
-\href{https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}{wikibooks.org/wiki/LaTeX/Floats,\_Figures\_and\_Captions}.
-
-\noindent
-Keep your artwork (graphics, figures, illustrations) clean and readable. At least 300dpi is a good resolution of a PNG format artwork. However, an SVG format artwork saved as a PDF will produce the best quality graphics. There are numerous tools out there that can produce vector graphics and let you save that as an SVG file and/or as a PDF file. One example of such a tool is the ``Flow algorithm software''. Here is the link for that: \href{http://www.flowgorithm.org/download/}{flowgorithm.org}.
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.3]{figures/chart.pdf}
-    \caption{Example figure in \LaTeX.}
+    \includegraphics[scale=0.7]{figures/Transformer.png}
+    \caption{The architecture of a transformer neural network.}
     \label{fig:chart_a}
 \end{figure}
 
-\clearpage %  use command \clearpage when you want section or text to appear in the next page.
+The transformer neural network takes a phrase as input and divides it into two sequences: one with word vector embeddings and one with positional encodings. The text is represented mathematically using word vector embeddings. Words must first be translated to embedding format before they can be processed by a neural network. In the embedding representation, each dictionary word is represented by a vector. Positional encodings are vector representations of the word's original location inside the sentence.The transformer combines word vector embeddings and positional encodings before passing the resulting data through a variety of encoders and decoders. It should be emphasized that, unlike RNNs and LSTMs, the entire input is sent into the network at once, rather than one piece at time.
 
-\section{Example of an algorithm in \LaTeX}
-Algorithm~\ref{algo:algo_example} is a good example of an algorithm in \LaTeX.  
-\begin{algorithm}
-    \caption{Example caption: sum of all even numbers}
-    \label{algo:algo_example}
-    \begin{algorithmic}[1]
-        \Require{$ \mathbf{x}  = x_1, x_2, \ldots, x_N$}
-        \Ensure{$EvenSum$ (Sum of even numbers in $ \mathbf{x} $)}
-        \Statex
-        \Function{EvenSummation}{$\mathbf{x}$}
-        \State {$EvenSum$ $\gets$ {$0$}}
-        \State {$N$ $\gets$ {$length(\mathbf{x})$}}
-        \For{$i \gets 1$ to $N$}                    
-        \If{$ x_i\mod 2 == 0$}  \Comment check if a number is even?
-        \State {$EvenSum$ $\gets$ {$EvenSum + x_i$}}
-        \EndIf
-        \EndFor
-        \State \Return {$EvenSum$}
-        \EndFunction
-    \end{algorithmic}
-\end{algorithm}
- 
-\section{Example of code snippet  in \LaTeX}
-
-Code Listing~\ref{list:python_code_ex} is a good example of including a code snippet in a report. While using code snippets, take care of the following:
-\begin{itemize}
-    \item do not paste your entire code (implementation) or everything you have coded. Add code snippets only. 
-    \item The algorithm shown in Algorithm~\ref{algo:algo_example} is usually preferred over code snippets in a technical/scientific report. 
-    \item Make sure the entire code snippet or algorithm stays on a single page and does not overflow to another page(s).  
-\end{itemize}
-
-Here are three examples of code snippets for three different languages (Python, Java, and CPP) illustrated in Listings~\ref{list:python_code_ex}, \ref{list:java_code_ex}, and \ref{list:cpp_code_ex} respectively.  
-
-\begin{lstlisting}[language=Python, caption={Code snippet in \LaTeX ~and  this is a Python code example}, label=list:python_code_ex]
-import numpy as np
-
-x  = [0, 1, 2, 3, 4, 5] # assign values to an array
-evenSum = evenSummation(x) # call a function
-
-def evenSummation(x):
-    evenSum = 0
-    n = len(x)
-    for i in range(n):
-        if np.mod(x[i],2) == 0: # check if a number is even?
-            evenSum = evenSum + x[i]
-    return evenSum
-\end{lstlisting}
-
-Here we used  the ``\textbackslash clearpage'' command and forced-out the second listing example onto the next page. 
-\clearpage  %
-\begin{lstlisting}[language=Java, caption={Code snippet in \LaTeX ~and  this is a Java code example}, label=list:java_code_ex]
-public class EvenSum{ 
-    public static int evenSummation(int[] x){
-        int evenSum = 0;
-        int n = x.length;
-        for(int i = 0; i < n; i++){
-            if(x[i]%2 == 0){ // check if a number is even?
-                evenSum = evenSum + x[i];
-            }
-        }
-        return evenSum;     
-    }
-    public static void main(String[] args){ 
-        int[] x  = {0, 1, 2, 3, 4, 5}; // assign values to an array
-        int evenSum = evenSummation(x);
-        System.out.println(evenSum);
-    } 
-} 
-\end{lstlisting}
-
-
-\begin{lstlisting}[language=C, caption={Code snippet in \LaTeX ~and  this is a C/C++ code example}, label=list:cpp_code_ex]
-int evenSummation(int x[]){
-    int evenSum = 0;
-    int n = sizeof(x);
-    for(int i = 0; i < n; i++){
-        if(x[i]%2 == 0){ // check if a number is even?
-            evenSum = evenSum + x[i];
-    	}
-    }
-    return evenSum;     
-}
-
-int main(){
-    int x[]  = {0, 1, 2, 3, 4, 5}; // assign values to an array
-    int evenSum = evenSummation(x);
-    cout<<evenSum;
-    return 0;
-}
-\end{lstlisting}
+Each encoder converts the input into a new collection of vectors known as an encoding. The decoders do the inverse, turning the encodings into a set of probabilities for possible output words. The SoftMax function may be used to represent the output probabilities in another natural language phrase. The attention mechanism, which is included in all encoders and decoders, allows the processing of one input word to integrate relevant data from other words while masking the words that do not contain significant information. This must be calculated several times, thus we use the parallel computing capabilities given by GPUs to build various attention strategies. The multi-head attention mechanism is to blame. Transformers have an advantage over LSTMs and RNNs in that they can analyze many words at the same time.
 
 
 
-\section{Example of in-text citation style}
-\subsection{Example of the equations and illustrations placement and reference in the text}
-Make sure whenever you refer to the equations, tables, figures, algorithms,  and listings for the first time, they also appear (placed) somewhere on the same page or in the following page(s). Always make sure to refer to the equations, tables and figures used in the report. Do not leave them without an \textbf{in-text citation}. You can refer to equations, tables and figures more them once.
 
-\subsection{Example of the equations and illustrations style}
-Write \textbf{Eq.} with an uppercase ``Eq`` for an equation before using an equation number with (\textbackslash eqref\{.\}). Use ``Table'' to refer to a table, ``Figure'' to refer to a figure, ``Algorithm'' to refer to an algorithm and ``Listing'' to refer to listings (code snippets). Note that, we do not use the articles ``a,'' ``an,'' and ``the'' before the words Eq., Figure, Table, and Listing, but you may use an article for referring the words figure, table, etc. in general.
+\section{Autoregressive Integrated Moving Average (ARIMA)}
 
-For example, the sentence ``A report structure is shown in \textbf{the} Table~\ref{tab:gen_template}'' should be written as ``A report structure is shown \textbf{in} Table~\ref{tab:gen_template}.'' 
- 
+It is a statistical analysis model that uses time series data to either better comprehend the data or forecast future trends. A statistical model is autoregressive if it predicts future values based on previous values. For example, an ARIMA model may attempt to estimate a stock's future pricing based on its past performance or a company's earnings based on previous periods.
 
-\section{Summary}
-Write a summary of this chapter.
+ARIMA's components serve as parameters using standard notation. A conventional nomenclature for ARIMA models is ARIMA with p, d, and q, where integer values represent the parameters to denote the kind of ARIMA model utilized. Parameters can be specified as: 1
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{figures/Arima.png}
+    \caption{The architecture of a ARIMA neural network.}
+    \label{fig:chart_a}
+\end{figure}
 
-~\\[5em]
-\noindent
-{\huge\textbf{Note:}} In the case of \textbf{software engineering} project a Chapter ``\textbf{Testing and Validation}'' should precede the ``Results'' chapter. See Section~\ref{subsec:se_chpters} for report organization of such project. 
+p is the number of lag observations in the model, commonly known as the lag order.
+d: the number of times the raw observations are differentiated; also known as the degree of differencing.
+q is the size of the moving average window, commonly known as the moving average's order.
+To start creating an ARIMA model for an investment, you download as much price data as possible. After identifying the data patterns, you look at the autocorrelations to determine the lowest order of differencing (d). If the lag-1 autocorrelation is zero or negative, the series is already differentiated. If the lag-1 is more than zero, you may need to differentiate the series further.
+
+Next, compare autocorrelations and partial autocorrelations to establish the order of regression (p) and the order of the moving average. Once you have the necessary information, you may pick the model you will use.
+
+\section{Artificial Neural Networks (ANN)}
+Artificial Neural Networks (ANN) are algorithms that simulate brain activity and are used to model complex patterns and foresee problems. The Artificial Neural Network (ANN) is a deep learning technique based on the notion of biological neural networks in the human brain. An attempt to imitate the workings of the human brain led to the development of artificial neural networks (ANN). ANNs operate very similarly to biological neural networks, however they are not identical. The ANN algorithm only takes numbers and structured input.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=1.0]{figures/ANN.png}
+    \caption{The architecture of a ANN neural network.}
+    \label{fig:chart_a}
+\end{figure}
+
+Image, Text, and Speech are examples of unstructured and non-numeric data types that are accepted by Convolutional Neural Networks (CNN) and Recursive Neural Networks (RNN). This page only discusses Artificial Neural Networks. The majority of neural networks have units that connect one layer to the next. Each of these links has a weight, which determines how one unit affects another. As input is sent from one unit to another, the neural network learns more about the data, finally producing an output from the output layer. 
+
+
+
+
+
+
+
+
 
