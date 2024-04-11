@@ -4,53 +4,26 @@
 The Anaconda Platform is used for overall design and implementation on the MAC Book Pro. We created six Python files that show the overall changes from 5 minutes, 1 hour, and 1 day for the ARIMA-ANN Hybrid and TNN algorithms. The design includes argument analysis for code execution for each type of firm, and the calling feature is more user-friendly. The ARIMA-ANN hybrid design was carried out with ARIMA parameters (2,1,3), and for TNN, we used 2-layer Dense modeling for encoder and decoder, as shown in Algorithm 1. The total experiment on timeseries prediction was carried out based on the numerous functional elements indicating the time features of the Yahoo finance stocks for the advancement.The goal of this paper is to provide a solution that will predict Yahoo's total stock price, suggesting the best prediction method.
 
 The design models are executed in two stages for each form of effective inquiry, one representing the prediction time values for the stocks and the other reflecting the overall effective loss observed variation on each type of company, assuring the corrected next day projected value.
- 
 
-
-
-
-\section{A section}
-
-...
-
-\clearpage
-\section{Example of a Table in \LaTeX}
-Table~\ref{tab:_ex_tab} is an example of a table created using the package \LaTeX  ``booktabs.'' do check the link: \href{https://en.wikibooks.org/wiki/LaTeX/Tables}{wikibooks.org/wiki/LaTeX/Tables} for more details. A table should be clean and readable. Unnecessary horizontal lines and vertical lines in tables make them unreadable and messy. The example in Table~\ref{tab:_ex_tab} uses a minimum number of liens (only necessary ones). Make sure that the top rule and bottom rule (top and bottom horizontal lines) of a table are present. 
-
-\begin{table}[h!]
+\begin{figure}[ht]
     \centering
-    \caption{Example of a table in \LaTeX}
-    \label{tab:_ex_tab}
-    \begin{tabular}{llr}     
-        \toprule
-        \multicolumn{2}{c}{Bike} \\
-        \cmidrule(r){1-2}
-        Type    &  Color & Price (\pounds) \\
-        \midrule
-        Electric    & black   & 700   \\
-        Hybrid      & blue    & 500   \\
-        Road        & blue    & 300   \\
-        Mountain    & red     & 300   \\
-        Folding     & black   & 500   \\
-        \bottomrule
-    \end{tabular}
-\end{table}
+    \includegraphics[scale=0.4]{figures/Trans 1hr.png}
+    \caption{Representing the overall actual and predicted values for Close stock for TNN algorithms with time period as 1hr.}
+    \label{fig:chart_a}
+\end{figure}
+ 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{figures/Trans 10min.png}
+    \caption{Representing the overall actual and predicted values for Close stock for TNN algorithms with time period as 10min.}
+    \label{fig:chart_a}
+\end{figure}
 
-\section{Example of captions style}
-
-\begin{itemize}
-    \item The \textbf{caption of a Figure (artwork) goes below} the artwork (Figure/Graphics/illustration). See example artwork in Figure~\ref{fig:chart_a}. 
-    \item  The \textbf{caption of a Table goes above} the table. See the example in Table~\ref{tab:_ex_tab}.
-    \item  The \textbf{caption of an Algorithm goes above} the algorithm. See the example in Algorithm~\ref{algo:algo_example}.
-    \item The \textbf{caption of a Listing goes below} the Listing  (Code snippet). See example listing in Listing~\ref{list:python_code_ex}. 
-\end{itemize} 
-
-
-
-
-
-\section{Summary}
-Write a summary of this chapter.
-
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{figures/Trans 5min.png}
+    \caption{Representing the overall actual and predicted values for Close stock for TNN algorithms with time period as 5min.}
+    \label{fig:chart_a}
+\end{figure}
 
 
